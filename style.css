@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+marquee {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: x-large;
+}
+.divi {
+    position: absolute;
+    height: 100%;
+    width: 5rem;
+    background-color: white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content:space-between ;
+    font-size: x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10rem 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.ani {
+    animation: aniHigh infinite linear 2s;
+}
+@keyframes aniHigh {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    100% {
+        color: white;
+    }
+}
